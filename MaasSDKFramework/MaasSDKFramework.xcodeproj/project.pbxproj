@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5090BA542A5E836D004941F0 /* MaasSDKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5090BA532A5E836D004941F0 /* MaasSDKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5090BA5B2A5E8808004941F0 /* MaasSDKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5090BA5A2A5E8808004941F0 /* MaasSDKConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5090BA502A5E836D004941F0 /* MaasSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaasSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5090BA532A5E836D004941F0 /* MaasSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaasSDKFramework.h; sourceTree = "<group>"; };
+		5090BA5A2A5E8808004941F0 /* MaasSDKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaasSDKConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 		5090BA462A5E836C004941F0 = {
 			isa = PBXGroup;
 			children = (
+				5090BA5A2A5E8808004941F0 /* MaasSDKConfig.swift */,
 				5090BA522A5E836D004941F0 /* MaasSDKFramework */,
 				5090BA512A5E836D004941F0 /* Products */,
 			);
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					5090BA4F2A5E836D004941F0 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5090BA5B2A5E8808004941F0 /* MaasSDKConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		5090BA582A5E836D004941F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		5090BA592A5E836D004941F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
