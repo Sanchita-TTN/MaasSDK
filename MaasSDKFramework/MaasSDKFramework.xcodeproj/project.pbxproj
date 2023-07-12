@@ -15,6 +15,7 @@
 		5090BA502A5E836D004941F0 /* MaasSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaasSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5090BA532A5E836D004941F0 /* MaasSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaasSDKFramework.h; sourceTree = "<group>"; };
 		5090BA5A2A5E8808004941F0 /* MaasSDKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaasSDKConfig.swift; sourceTree = "<group>"; };
+		5090BA5D2A5E88C0004941F0 /* Accessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accessibility.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/Accessibility.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +35,7 @@
 				5090BA5A2A5E8808004941F0 /* MaasSDKConfig.swift */,
 				5090BA522A5E836D004941F0 /* MaasSDKFramework */,
 				5090BA512A5E836D004941F0 /* Products */,
+				5090BA5C2A5E88BF004941F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +53,14 @@
 				5090BA532A5E836D004941F0 /* MaasSDKFramework.h */,
 			);
 			path = MaasSDKFramework;
+			sourceTree = "<group>";
+		};
+		5090BA5C2A5E88BF004941F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5090BA5D2A5E88C0004941F0 /* Accessibility.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
